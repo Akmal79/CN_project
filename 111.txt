@@ -4,10 +4,7 @@ cd login-2fa
 npm init -y
 npm install express body-parser ejs speakeasy qrcode
 node app.js
-
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Step-by-Step Verification Process
 User logs in:
 
@@ -23,8 +20,10 @@ Server verifies the token:
 
 The server uses the speakeasy.totp.verify method to check if the token is valid based on the temporary secret.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 EJS (Embedded JavaScript) is a simple templating language that lets you generate HTML markup with plain JavaScript. It is often used with Node.js to render dynamic content on web pages by embedding JavaScript code within the HTML
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To verify two-factor authentication (2FA), several network features and components are typically utilized to ensure secure and reliable communication. Here are the key network features involved in the process:
 1. HTTPS (Hypertext Transfer Protocol Secure)
