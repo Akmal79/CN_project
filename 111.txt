@@ -1,0 +1,6 @@
+To run instructions:
+mkdir login-2fa
+cd login-2fa
+npm init -y
+npm install express body-parser ejs speakeasy qrcode
+node app.js
