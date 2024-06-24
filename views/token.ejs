@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2FA Token</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Enter 2FA Token</h2>
+    <form action="/verify" method="POST">
+      <input type="hidden" name="username" value="<%= username %>">
+      <div>
+        <label for="token">Token:</label>
+        <input type="text" id="token" name="token" required>
+      </div>
+      <button type="submit">Verify</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Successful</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .tick {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #4caf50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: popIn 0.5s ease;
+    }
+
+    .tick:before {
+      content: '';
+      width: 30px;
+      height: 60px;
+      border-right: 5px solid white;
+      border-bottom: 5px solid white;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 15px;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tick"></div>
+    <h2>2FA verification successful! You are now logged in.</h2>
+  </div>
+</body>
+</html>
