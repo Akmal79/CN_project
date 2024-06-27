@@ -58,12 +58,16 @@ app.post('/verify', (req, res) => {
   if (verified) {
     res.redirect('/success');
   } else {
-    res.send('Invalid token, verification failed.');
+    res.redirect('/failure');
   }
 });
 
 app.get('/success', (req, res) => {
   res.render('success');
+});
+
+app.get('/failure', (req, res) => {
+  res.render('failure');
 });
 
 const PORT = process.env.PORT || 3001;
